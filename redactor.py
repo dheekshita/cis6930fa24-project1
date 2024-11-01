@@ -9,7 +9,7 @@ from nltk.corpus import wordnet as wn
 from collections import defaultdict
 
 nlp = spacy.load("en_core_web_md")
-
+nltk.download('wordnet', quiet=True)
 
 DATES = [
     r'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)',
